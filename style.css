@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #121212;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.loading-1 {
+    font-size: 5rem;
+    position: relative;
+    letter-spacing: 5px;
+    line-height: 1.4;
+    text-transform: uppercase;
+    color: transparent;
+    pointer-events: none;
+}
+
+.loading-1:before {
+    position: absolute;
+    content: attr(data-text);
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-radius: 5px;
+    color: #ffa600;
+    animation: load 5s linear infinite;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+@keyframes load {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+
