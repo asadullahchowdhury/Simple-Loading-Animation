@@ -26,6 +26,18 @@ body {
     text-transform: uppercase;
     color: transparent;
     pointer-events: none;
+    
+}
+ @media screen and (max-width: 767px) {
+     .loading-1  {
+         font-size: 3rem;
+     }
+}
+
+@media screen and (max-width: 400px) {
+    .loading-1 {
+        font-size: 2rem;
+    }
 }
 
 .loading-1:before {
